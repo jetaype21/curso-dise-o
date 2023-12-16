@@ -97,7 +97,7 @@ class Signup extends Component {
                       required
                       type="password"
                       name="password"
-                      placeholder="Choose a password"
+                      placeholder="Digite su contraseña"
                       value={this.state.password}
                       onChange={this.handleInputChange}
                     />

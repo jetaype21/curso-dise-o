@@ -98,7 +98,7 @@ class NewCourseForm extends Component {
                     name="title"
                     value={this.state.title}
                     onChange={this.handleInputChange}
-                    placeholder="Eye-catching title"
+                    placeholder="Titulo del curso"
                     required
                   />
                 </Form.Group>
@@ -110,7 +110,7 @@ class NewCourseForm extends Component {
                     name="lead"
                     value={this.state.lead}
                     onChange={this.handleInputChange}
-                    placeholder="Eye-catching phrase"
+                    placeholder="crea un parrafo principal"
                     required
                   />
                 </Form.Group>
@@ -122,7 +122,7 @@ class NewCourseForm extends Component {
                     name="description"
                     value={this.state.description}
                     onChange={this.handleInputChange}
-                    placeholder="Describe your course"
+                    placeholder="Descripcion del curso"
                     required
                   />
                 </Form.Group>
@@ -176,7 +176,7 @@ class NewCourseForm extends Component {
                     name="whatYouWillLearn"
                     value={this.state.whatYouWillLearn}
                     onChange={this.handleInputChange}
-                    placeholder="The main topics your students will learn"
+                    placeholder="Temas principales a aprender para los alumnos"
                     required
                   />
                   <Form.Text id="whatYouWillLearn" muted>
@@ -193,7 +193,7 @@ class NewCourseForm extends Component {
                         value={this.state.price}
                         onChange={this.handleInputChange}
                         min="0"
-                        placeholder="Don't be greedy..."
+                        placeholder="Precio"
                         required
                       />
                     </Form.Group>
@@ -207,7 +207,7 @@ class NewCourseForm extends Component {
                         value={this.state.duration}
                         onChange={this.handleInputChange}
                         min="0"
-                        placeholder="How many hours?"
+                        placeholder="Cuantas horas dura?"
                         required
                       />
                     </Form.Group>
@@ -220,7 +220,7 @@ class NewCourseForm extends Component {
                     name="requirements"
                     value={this.state.requirements}
                     onChange={this.handleInputChange}
-                    placeholder="What is necessary to stay on course?"
+                    placeholder="Requerimientos para el curso?"
                   />
                   <Form.Text id="requirements" muted>
                     Separe los requerimientos con comas
@@ -234,7 +234,7 @@ class NewCourseForm extends Component {
                     name="videos"
                     value={this.state.videos}
                     onChange={this.handleInputChange}
-                    placeholder="Include here the URLs of your content (audio or video)"
+                    placeholder="Incluyre audios (audio or video)"
                   />
                   <Form.Text id="videos" muted>
                     Separe los URLs con comas

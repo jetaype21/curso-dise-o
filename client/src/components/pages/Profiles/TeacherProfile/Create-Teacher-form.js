@@ -106,7 +106,7 @@ class NewTeacherForm extends Component {
                         name="name"
                         value={this.state.name}
                         onChange={this.handleInputChange}
-                        placeholder="Enter your name"
+                        placeholder="Ingrese sus nombres"
                         required
                       />
                     </Form.Group>
@@ -119,7 +119,7 @@ class NewTeacherForm extends Component {
                         name="surname"
                         value={this.state.surname}
                         onChange={this.handleInputChange}
-                        placeholder="Enter your last name"
+                        placeholder="Ingrese sus apellidos"
                         required
                       />
                     </Form.Group>
@@ -132,7 +132,7 @@ class NewTeacherForm extends Component {
                     name="jobOccupation"
                     value={this.state.jobOccupation}
                     onChange={this.handleInputChange}
-                    placeholder="What is your profession"
+                    placeholder="Caul es su profesion?"
                   />
                 </Form.Group>
                 <Form.Group controlId="description">
@@ -142,7 +142,7 @@ class NewTeacherForm extends Component {
                     name="description"
                     value={this.state.description}
                     onChange={this.handleInputChange}
-                    placeholder="Tell us something about you"
+                    placeholder="Acerca de el"
                   />
                 </Form.Group>
 
@@ -159,7 +159,7 @@ class NewTeacherForm extends Component {
                         name="linkedin"
                         value={this.state.linkedin}
                         onChange={this.handleInputChange}
-                        placeholder="Do you have a linkedIn profile?"
+                        placeholder="Tiene perfil de linkedin?"
                       />
                     </Form.Group>
                   </Tab>
@@ -171,7 +171,7 @@ class NewTeacherForm extends Component {
                         name="website"
                         value={this.state.website}
                         onChange={this.handleInputChange}
-                        placeholder="Do you have any website?"
+                        placeholder="Tiene un sitio web?"
                       />
                     </Form.Group>
                   </Tab>
@@ -183,7 +183,7 @@ class NewTeacherForm extends Component {
                         name="youtube"
                         value={this.state.youtube}
                         onChange={this.handleInputChange}
-                        placeholder="Do you have a Youtube channel?"
+                        placeholder="Tiene un canal de yt??"
                       />
                     </Form.Group>
                   </Tab>
@@ -214,7 +214,7 @@ class NewTeacherForm extends Component {
                   className="btn btn-outline-dark mt-5"
                   disabled
                 >
-                  Go back
+                  regresar
                 </Link>
               )}
             </Col>

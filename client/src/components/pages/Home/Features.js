@@ -20,13 +20,11 @@ const Features = () => {
               desarrollar UNA VIDA SEXUAL SALIDABEL.
             </p>
             <p className="mb-5">
-              Potencie a sus empleados remotos para que aprendan lo que
-              necesitan, cuando lo necesitan. Aprendizaje en línea de expertos
-              globales en tecnología, negocios, bienestar y mucho más para
-              ayudar a sus empleados a hacer lo que sea que venga después.
+              Aprendizaje en línea de expertos globales en psicologi, bienestar
+              familiar y mucho más para ayudar a los escolares .
             </p>
           </Col>
-          <Col lg={3} md={6}>
+          {/* <Col lg={3} md={6}>
             <FeaturesCard
               imgSrc="//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/6pk4riNMII7w6COla8glF4/8c8655c3e7f185537eec5ee9ed118e83/EmployeableSkills__1_.svg"
               alt="Employeable skills icon"
@@ -55,7 +53,7 @@ const Features = () => {
               title="The help you need"
               text="Reach out to our mentors 24/7 and have your coding questions answered quickly so you can keep learning."
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>
