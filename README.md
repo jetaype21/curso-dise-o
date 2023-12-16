@@ -1,88 +1,75 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
+**API CURSOS**
 
-# Freedemy
+| Ruta                                    | Verbo HTTP | Descripción                                |
+| :-------------------------------------- | :--------: | :----------------------------------------- |
+| `/api/courses/sampleCourses`            |   `GET`    | Muestra cursos aleatorios                  |
+| `/api/courses/getAllCourses`            |   `GET`    | Muestra todos los cursos                   |
+| `/api/courses/getTeacherCourses/:id`    |   `GET`    | Muestra todos los cursos del profesor      |
+| `/api/courses/getOneCourse/:id`         |   `GET`    | Muestra un curso                           |
+| `/api/courses/newCourse`                |   `POST`   | Crea un nuevo curso                        |
+| `/api/courses/editCourse/:id`           |   `PUT`    | Edita un curso                             |
+| `/api/courses/deleteCourse/:id`         |  `DELETE`  | Elimina un curso                           |
+| `/api/courses/deleteTeacherCourses/:id` |  `DELETE`  | Elimina los cursos creados por el profesor |
 
-Ironhack Web Development Bootcamp 9th week project: MERN Stack SPA e-learning platform.
-This is an E-learning Web App was bootstrapped with Create React App and other libraries. The UI framework used was React-Bootstrap.
+**API PROFESORES**
 
+| Ruta                              | Verbo HTTP | Descripción                   |
+| :-------------------------------- | :--------: | :---------------------------- |
+| `/api/teachers/getAllTeachers`    |   `GET`    | Muestra todos los profesores  |
+| `/api/teachers/getTheTeacher/:id` |   `GET`    | Muestra detalles del profesor |
+| `/api/teachers/getOneTeacher/:id` |   `GET`    | Valida el rol del profesor    |
+| `/api/teachers/newTeacher`        |   `POST`   | Crea un nuevo profesor        |
+| `/api/teachers/editTeacher/:id`   |   `PUT`    | Edita un profesor             |
+| `/api/teachers/deleteTeacher/:id` |  `DELETE`  | Elimina un profesor           |
 
-## Here's the route we will be using:
+**API USUARIOS**
 
+| Ruta                                        | Verbo HTTP | Descripción                                            |
+| :------------------------------------------ | :--------: | :----------------------------------------------------- |
+| `/api/users/getOneUser/:id`                 |   `GET`    | Obtiene detalles del usuario                           |
+| `/api/users/editUser/:id`                   |   `PUT`    | Edita un usuario                                       |
+| `/api/users/deleteUser/:id`                 |  `DELETE`  | Elimina un usuario                                     |
+| `/api/users/userFavCourses/:id`             |   `GET`    | Muestra la lista de cursos favoritos del usuario       |
+| `/api/users/userFavTeachers/:id`            |   `GET`    | Muestra la lista de profesores favoritos del usuario   |
+| `/api/users/editUser/updateFavCourses/:id`  |   `PUT`    | Actualiza la lista de cursos favoritos del usuario     |
+| `/api/users/editUser/updateFavTeachers/:id` |   `PUT`    | Actualiza la lista de profesores favoritos del usuario |
 
-SERVER 
+**API COMENTARIOS**
 
-API COURSES
+| Ruta                                  | Verbo HTTP | Descripción                   |
+| :------------------------------------ | :--------: | :---------------------------- |
+| `/api/comments/getCourseComments/:id` |   `GET`    | Obtiene comentarios del curso |
+| `/api/comments/newComment`            |   `POST`   | Crea un comentario            |
+| `/api/comments/deleteComment/:id`     |  `DELETE`  | Elimina un comentario         |
 
-|   Route   | HTTP Verb |   Description   |
-| :--- | :---: | :--- |
-| `/api/courses/sampleCourses` |    `GET`    | Show random Courses |
-| `/api/courses/getAllCourses` |    `GET`    | Show all Courses |
-| `/api/courses/getTeacherCourses/:id` |    `GET`    | Show all Teacher Courses |
-| `/api/courses/getOneCourse/:id` |    `GET`    | Show one Course |
-| `/api/courses/newCourse` |    `POST`    | Create new Course |
-| `/api/courses/editCourse/:id` |    `PUT`    | Edit Course |
-| `/api/courses/deleteCourse/:id` |    `DELETE`   | Delete Course |
-| `/api/courses/deleteTeacherCourses/:id` |    `DELETE`   | Delete Courses created by Teacher |
+**API AUTENTICACIÓN**
 
-API TEACHERS
+| Ruta            | Verbo HTTP | Descripción                                |
+| :-------------- | :--------: | :----------------------------------------- |
+| `/api/login`    |   `POST`   | Gestiona el formulario de inicio de sesión |
+| `/api/signup`   |   `POST`   | Gestiona el formulario de registro         |
+| `/api/logout`   |   `POST`   | Gestiona el cierre de sesión               |
+| `/api/loggedin` |   `GET`    | Gestiona la persistencia de la sesión      |
 
-|   Route   | HTTP Verb |   Description   |
-| :--- | :---: | :--- |
-| `/api/teachers/getAllTeachers` |    `GET`    | Show all Teachers |
-| `/api/teachers/getTheTeacher/:id` |    `GET`    | Show Teacher Details |
-| `/api/teachers/getOneTeacher/:id` |    `GET`    | Validate Teacher role |
-| `/api/teachers/newTeacher` |    `POST`    | Create new Teacher |
-| `/api/teachers/editTeacher/:id` |    `PUT`    | Edit Teacher |
-| `/api/teachers/deleteTeacher/:id` |    `DELETE`   | Delete Teacher |
+**API ARCHIVOS**
 
-API USERS
+| Ruta          | Verbo HTTP | Descripción   |
+| :------------ | :--------: | :------------ |
+| `/api/upload` |   `POST`   | Sube archivos |
 
-|   Route   | HTTP Verb |   Description   |
-| :--- | :---: | :--- |
-| `/api/users/getOneUser/:id` |    `GET`    | Get User Details |
-| `/api/users/editUser/:id` |    `PUT`    | Edit User |
-| `/api/users/deleteUser/:id` |    `DELETE`   | Delete User |
-| `/api/users/userFavCourses/:id` |    `GET`   | Show User Favorites Courses List |
-| `/api/users/userFavTeachers/:id` |    `GET`   | Show User Favorites Teachers List |
-| `/api/users/editUser/updateFavCourses/:id` |    `PUT`   | Update User Favorites Courses List |
-| `/api/users/editUser/updateFavTeachers/:id` |    `PUT`   | Update User Favorites Teachers List |
+**CLIENTE**
 
-API COMMENTS
-
-|   Route   | HTTP Verb |   Description   |
-| :--- | :---: | :--- |
-| `/api/comments/getCourseComments/:id` |    `GET`    | Get Course Comments |
-| `/api/comments/newComment` |    `POST`    | Create Comment |
-| `/api/comments/deleteComment/:id` |    `DELETE`   | Delete Comment |
-
-API AUTH
-
-|   Route   | HTTP Verb |   Description   |
-| :--- | :---: | :--- |
-| `/api/login` |    `POST`   | Manage log in form |
-| `/api/signup` |    `POST`   | Manage sign up form |
-| `/api/logout` |    `POST`   | Manage log out |
-| `/api/loggedin` |    `GET`   | Manage session persist |
-
-API FILES
-
-|   Route   | HTTP Verb |   Description   |
-| :--- | :---: | :--- |
-| `/api/upload` |    `POST`   | Upload files |
-
-CLIENT
-
-|   Route   |   Description   |
-| :--- | :--- |
-| `/` | Home Page |
-| `/courses` | Show All Courses |
-| `/courses/:course_id` | Show One Course |
-| `/teachers` | Show All Teachers |
-| `/teachers/:teacher_id` | Show Teacher Details |
-| `/signup` | Show Signup Form |
-| `/profile` | Show User Profile |
-| `/profile/edit-user` | Show Edit Form |
-| `/profile/create-teacher` | Show Create Teacher Profile Form |
-| `/profile-teacher/edit-teacher` | Show Edit Teacher Form |
-| `/profile-teacher/create-course` | Show Create Course Form |
-| `/profile-teacher/edit-course/:course_id` | Show Edit Course Form |
+| Ruta                                      | Descripción                                            |
+| :---------------------------------------- | :----------------------------------------------------- |
+| `/`                                       | Página de inicio                                       |
+| `/courses`                                | Muestra todos los cursos                               |
+| `/courses/:course_id`                     | Muestra un curso                                       |
+| `/teachers`                               | Muestra todos los profesores                           |
+| `/teachers/:teacher_id`                   | Muestra detalles del profesor                          |
+| `/signup`                                 | Muestra el formulario de registro                      |
+| `/profile`                                | Muestra el perfil del usuario                          |
+| `/profile/edit-user`                      | Muestra el formulario de edición                       |
+| `/profile-teacher/create-teacher`         | Muestra el formulario para crear el perfil de profesor |
+| `/profile-teacher/edit-teacher`           | Muestra el formulario de edición del profesor          |
+| `/profile-teacher/create-course`          | Muestra el formulario para crear un curso              |
+| `/profile-teacher/edit-course/:course_id` | Muestra el formulario de edición del curso             |
