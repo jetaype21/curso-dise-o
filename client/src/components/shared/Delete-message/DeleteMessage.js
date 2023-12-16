@@ -7,7 +7,7 @@ const DeleteMessage = () => {
       <hr />
       <p>
         Está a punto de eliminar información de forma permanente, ¿está seguro
-        de que?
+        de Eliminar?
       </p>
     </Container>
   );

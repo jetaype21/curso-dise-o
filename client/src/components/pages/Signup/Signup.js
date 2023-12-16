@@ -38,6 +38,7 @@ class Signup extends Component {
       .then((newUser) => {
         console.log(newUser);
 
+        console.log(newUser.data);
         this.props.storeUser(newUser.data);
         this.props.history.push("/courses");
         this.props.handleToast(true, "Registro exitoso!", "#d4edda");
