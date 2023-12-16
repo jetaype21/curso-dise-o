@@ -1,12 +1,15 @@
-import { Container } from 'react-bootstrap'
+import { Container } from "react-bootstrap";
 
 const DeleteMessage = () => {
   return (
     <Container>
-      <h5>Deletion request</h5>
+      <h5>Peticion de eliminar</h5>
       <hr />
-      <p>You are about to permanently delete information, are you sure?</p>
+      <p>
+        Está a punto de eliminar información de forma permanente, ¿está seguro
+        de que?
+      </p>
     </Container>
-  )
-}
-export default DeleteMessage
+  );
+};
+export default DeleteMessage;
